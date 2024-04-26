@@ -1,5 +1,6 @@
 package com.github.ninjakid.asteriamod;
 
+import com.github.ninjakid.asteriamod.item.ModCreativeModeTabs;
 import com.github.ninjakid.asteriamod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -30,6 +31,8 @@ public class AsteriaMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
@@ -55,6 +58,13 @@ public class AsteriaMod
     {
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModItems.STORMBERRY);
+        }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SHARD);
+            event.accept(ModItems.HANDLE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.CRITBRINGER);
         }
     }
 

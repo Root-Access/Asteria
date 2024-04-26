@@ -1,3 +1,8 @@
 {
-  "item.asteria.stormberry": "Stormberry"
+  "item.asteria.stormberry": "Stormberry",
+  "item.asteria.shard": "Critbringer Shard",
+  "item.asteria.critbringer": "The Critbringer",
+  "item.asteria.handle": "Critbringer Handle",
+
+  "creativetab.asteria_tab": "Asteria"
 }

@@ -13,6 +13,12 @@ public class ModItems {
 
 public static final RegistryObject<Item> STORMBERRY = ITEMS.register("stormberry",
         () -> new Item(new Item.Properties()));
+public static final RegistryObject<Item> SHARD = ITEMS.register("shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HANDLE = ITEMS.register("handle",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRITBRINGER = ITEMS.register("critbringer",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
